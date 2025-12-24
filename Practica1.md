@@ -77,7 +77,6 @@ void loop() {
 ✅ Usar el Serial Monitor para debug  
 
 ---
-## Comunicación Serial y Python
 
 ## 🔗 Resumen
 - **Función pinMode:** configura un pin como entrada o salida
