@@ -27,59 +27,10 @@ void loop() {
   delay(1000);             // Esperar 1 segundo
 }
 ```
-
+### Ahora añadir una parte (+) LED, para visualizar mejor al ejecutar
 ---
 
-## 🎨 Método 2: LED Externo (MÁS VISUAL)
-
-### Pasos en Wokwi:
-
-#### 1. Crear proyecto base
-   - Ir a: https://wokwi.com/projects/new/arduino-uno
-
-#### 2. Agregar componentes
-   - Click en botón azul **"+"** (arriba izquierda)
-   - Buscar y agregar:
-     - **LED** (componente rojo)
-     - **Resistor** (resistencia 220Ω)
-
-#### 3. Hacer conexiones
-   Arrastra los componentes y conecta:
-   
-   ```
-   Pin 13 Arduino → Resistencia (220Ω) → LED (+) → GND Arduino
-   ```
-
-#### 4. Usar este código:
-```cpp
-// Práctica 1: Parpadeo de LED externo
-const int LED_PIN = 13;
-
-void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  Serial.begin(9600);
-  Serial.println("Sistema iniciado");
-}
-
-void loop() {
-  Serial.println("LED encendido");
-  digitalWrite(LED_PIN, HIGH);
-  delay(1000);
-  
-  Serial.println("LED apagado");
-  digitalWrite(LED_PIN, LOW);
-  delay(1000);
-}
-```
-
-#### 5. Ver resultados
-   - Monitor Serial: Mensajes de estado
-   - LED visual: Parpadeo grande y claro
-
----
-
-
-## 🎓 Retos para Estudiantes
+## 🎓 Retos: resolver en clase
 
 ### Reto 1: Cambiar patrón
 Modificar para que haga:
@@ -112,10 +63,8 @@ void loop() {
 }
 ```
 
-### Reto 3: Control por Serial
-Permitir encender/apagar LED enviando comandos desde Serial Monitor:
-- Enviar "1" → Encender
-- Enviar "0" → Apagar
+### Reto 2: Encender LED con un botón
+- https://www.youtube.com/watch?v=x8rEgxWrUHg 
 
 ---
 
@@ -128,6 +77,7 @@ Permitir encender/apagar LED enviando comandos desde Serial Monitor:
 ✅ Usar el Serial Monitor para debug  
 
 ---
+## Comunicación Serial y Python
 
 ## 🔗 Resumen
 - **Función pinMode:** configura un pin como entrada o salida
